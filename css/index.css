@@ -140,7 +140,7 @@ button[disabled=disabled], button:disabled {
 	font-weight: 100;
 }
 
-#mensagem-erro {
+#mensagens-erro {
 	color:rgb(216, 23, 23);
 	font-weight: 800;
 }
