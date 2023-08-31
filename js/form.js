@@ -1,3 +1,5 @@
+
+
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
@@ -18,7 +20,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     adicionaPacienteNaTabela(paciente);
 
     form.reset();
-
+    document
     var mensagensErro = document.querySelector("#mensagens-erro");
     mensagensErro.innerHTML = "";
 
