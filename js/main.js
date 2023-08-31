@@ -9,7 +9,7 @@ var tdImc = paciente.querySelector('.info-imc')
 
 var altura = tdAltura.textContent
 var peso = tdPeso.textContent
-var imc = peso / (altura*altura)
+var imc = calculaImc(peso, altura)
 
 if (peso <= 0 || peso >= 250){
     tdImc.textContent ="Peso inválido!"
@@ -19,13 +19,15 @@ if (peso <= 0 || peso >= 250){
     paciente.classList.add("paciente-invalido")
 
 } else {
-    tdImc.textContent = imc.toFixed(2)
+    tdImc.textContent = imc
 }
 }
 
-console.log(botaoAdicionar)
-botaoAdicionar.addEventListener("click", function (event){
-    event.preventDefault()
-    console.log("IOLALA")
-})
 
+function calculaImc(peso, altura) {
+    var imc = 0
+
+    imc = peso / (altura * altura)
+
+    return imc.toFixed(2)
+}
