@@ -150,3 +150,30 @@ button[disabled=disabled], button:disabled {
 	opacity: 0;
 	transition: 0.5s;
 }
+
+#filtrar-tabela{
+	display: flex;
+	width: 200px;
+	height: 28px;
+	border-radius: 5px;
+	color:#000000;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.buscar{
+	display: flex;
+	color: #000000;
+	font-size: 1.2rem;
+}
+
+.filtrar{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+}
+
+.invisivel{
+	display: none;
+}
