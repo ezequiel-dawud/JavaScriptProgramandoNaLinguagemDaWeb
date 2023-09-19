@@ -1,49 +1,59 @@
-*{
+* {
 	box-sizing: border-box;
- }
+}
 
-body{
+body {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	background-color: #d8eeeb;
 }
 
-header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
+header {
+	background-color: #ffffff;
+	height: 5em;
 	margin-bottom: 1em;
+
 }
 
-header h1{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
-}
-header h2{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
+header h1 {
+	background-image: url(../img/pexels-ryutaro-tsukata-6249503.jpg);
+	background-size: cover;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 3em;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+
+
+
 }
 
-header .container:before{
+header h2 {
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header .container:before {
 	content: '';
-	display:inline-block;
+	display: inline-block;
 	height: 100%;
-	vertical-align:	middle;
+	vertical-align: middle;
 }
 
-.container{
+.container {
 	width: 60%;
 	height: 100%;
 	margin: 0 auto;
 }
 
-section{
+section {
 	margin: 2em 0;
 	overflow: hidden;
 }
 
-section h2{
+section h2 {
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
@@ -51,33 +61,35 @@ section h2{
 	margin-bottom: .5em;
 }
 
-table{
+table {
 	width: 100%;
-	margin-bottom : .5em;
-    table-layout: fixed;
+	margin-bottom: .5em;
+	table-layout: fixed;
+	background-color: #fff;
 
 }
 
-td, th {
+td,
+th {
 	padding: .7em;
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
 }
 
-th{
+th {
 	font-weight: bold;
 	background-color: #EEE;
 }
 
-label{
+label {
 	color: #555;
 	display: block;
 	margin-bottom: .2em;
 }
 
 
-.campo{
+.campo {
 	margin: 0;
 	padding-bottom: 1em;
 	border: 1px solid #ccc;
@@ -85,63 +97,65 @@ label{
 	width: 100%;
 }
 
-.campo-medio{
-	
+.campo-medio {
+
 	display: inline-block;
 	gap: 0.5rem;
 }
 
-.grupo{
+.grupo {
 	display: inline-block;
 	width: 32.%;
 	padding: 10px 0px;
 }
 
-button{
-	padding: .5em 2em;
+button {
+	border-radius: 5px;
+	display: block;
+	padding: 1rem;
 	border: 0;
 	border-bottom: 3px solid;
 	font-size: 1.2em;
 	cursor: pointer;
-	margin: 0;
-	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
+	background-color: #0c8cd3;
 	border-color: #04324c;
-	width: 20%;
-    display: block;
-    clear: both;
-    margin: 10px 0px;
+	width: 10rem;
+	clear: both;
+	margin: 10px 0px;
+	text-align: center;
+	align-self: auto;
 
 }
 
-button:active{
-	margin-top:0px;
+button:active {
+	margin-top: 0px;
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
-    background-color: gray;
+button[disabled=disabled],
+button:disabled {
+	background-color: gray;
 	border-color: darkgray;
 
 }
 
-.adicionar-paciente{
-    margin-top: 30px;
+.adicionar-paciente {
+	margin-top: 30px;
 }
 
-.campo-invalido{
+.campo-invalido {
 	border: 1px solid red;
 }
 
-.paciente-invalido{
+.paciente-invalido {
 	background-color: rgb(216, 23, 23);
 	color: white;
 	font-weight: 100;
 }
 
 #mensagens-erro {
-	color:rgb(216, 23, 23);
+	color: rgb(216, 23, 23);
 	font-weight: 800;
 }
 
@@ -151,29 +165,29 @@ button[disabled=disabled], button:disabled {
 	transition: 0.5s;
 }
 
-#filtrar-tabela{
+#filtrar-tabela {
 	display: flex;
 	width: 200px;
 	height: 28px;
 	border-radius: 5px;
-	color:#000000;
+	color: #000000;
 	margin-bottom: 20px;
 	font-weight: 300;
 }
 
-.buscar{
+.buscar {
 	display: flex;
 	color: #000000;
 	font-size: 1.2rem;
 }
 
-.filtrar{
+.filtrar {
 	display: flex;
 	flex-direction: row;
 	text-align: center;
 	align-items: center;
 }
 
-.invisivel{
+.invisivel {
 	display: none;
 }
